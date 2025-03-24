@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Coordinates</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        .form-container {
+            width: 50%;
+        }
+        .form-container h1 {
+            font-size: 24px;
+        }
+        .form-container label {
+            margin-bottom: 10px;
+            display: block;
+        }
+        .form-container input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px 0;
+        }
+        .form-container input[type="submit"] {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .image-container {
+            width: 45%;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+        }
+        .result-container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Enter Coordinates</h1>
+        <form method="POST">
+            <label for="x">X Coordinate:</label>
+            <input type="text" id="x" name="x" required><br>
+            <label for="y">Y Coordinate:</label>
+            <input type="text" id="y" name="y" required><br>
+            <label for="z">Z Coordinate:</label>
+            <input type="text" id="z" name="z" required><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        {% if x and y and z %}
+        <div class="result-container">
+            <h3>Coordinates Submitted!</h3>
+            <p><strong>X:</strong> {{ x }}</p>
+            <p><strong>Y:</strong> {{ y }}</p>
+            <p><strong>Z:</strong> {{ z }}</p>
+        </div>
+        {% endif %}
+    </div>
+
+    <div class="image-container">
+        <h2>Random Image:</h2>
+        <img src="{{ url_for('', filename=image_name) }}" alt="Random Image">
+    </div>
+</body>
+</html>
