@@ -1,5 +1,5 @@
 from flask import Flask, request, render_template, jsonify, Response
-import cv2
+from render_img import render_save_gaussian
 import numpy as np
 
 app = Flask(__name__)
@@ -10,51 +10,35 @@ image_path = "image.jpeg"
 image = np.array([])
 
 # Store the coordinates (for retrieval) and image name
-stored_coordinates = {}
+position = np.zeros(3)
+orientation = np.eye(3,3)
 coordinate_bounds = [-1, 1]
 
 # Main page route with the form and image
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/', methods=[])
 def home():
-    if request.method == 'POST':
-        # Get the coordinates from the form
-        x = request.form.get('x')
-        y = request.form.get('y')
-        z = request.form.get('z')
-
-        # Store the coordinates
-        stored_coordinates['x'] = x
-        stored_coordinates['y'] = y
-        stored_coordinates['z'] = z
-
-        # TODO Render to the image based on image coordinates
-        # Save the rendered image
-        cv2.imwrite(image_path, image)
-
-        return render_template('index.html', x=x, y=y, z=z, image_name=image_path)
-    
-    return render_template('index.html', image_name=image_path)
+    return render_template('index.html', x=x, y=y, z=z, image_name=image_path)
 
 # POST route to accept JSON data
-@app.route('/post', methods=['POST'])
+@app.route('/send-coords', methods=['POST'])
 def post_data():
     if request.is_json:
         data = request.get_json()
-        stored_coordinates['x'] = data.get('x')
-        stored_coordinates['y'] = data.get('y')
-        stored_coordinates['z'] = data.get('z')
+        stored_coordinates['x'] = data.get('position.x')
+        stored_coordinates['y'] = data.get('position.y')
+        stored_coordinates['z'] = data.get('position.z')
         return jsonify({"message": "Data received successfully!"}), 200
     else:
         return jsonify({"error": "Request must be JSON"}), 400
 
 # GET route to retrieve an image
-@app.route('/get', methods=['GET'])
+@app.route('/get-img', methods=['GET'])
 def get_image():
     # Return the image as a response with the appropriate content-type
     return Response(image, content_type='image/jpeg')
 
 # GET route to retrieve the stored coordinates
-@app.route('/get-coordinates', methods=['GET'])
+@app.route('/get-coords', methods=['GET'])
 def get_data():
     if stored_coordinates:
         return jsonify(stored_coordinates), 200
