@@ -52,17 +52,6 @@ class NavigatorNode(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-
-    # Load configuration from a YAML file
-    config_file = os.path.join(os.getcwd(), 'config', 'config.yaml')  # Adjust path as needed
-    if os.path.exists(config_file):
-        with open(config_file, 'r') as file:
-            config = yaml.safe_load(file)
-            flask_endpoint_url = config.get('flask', {}).get('endpoint_url')
-            rclpy.get_default_context().params['endpoint_url'] = flask_endpoint_url
-    else:
-        print(f"Warning: Configuration file {config_file} not found, using default endpoint URL.")
-
     node = NavigatorNode()
     rclpy.spin(node)
     rclpy.shutdown()
