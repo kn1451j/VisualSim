@@ -3,7 +3,6 @@ Naive navigator class simulating the state of a "robot" spinning in a circle
 TODO -> connect this to the navigator node for it to make post requests
 """
 import numpy as np
-from scipy.spatial.transform import Rotation
 
 class Navigator:
     def __init__(self, position, orientation):

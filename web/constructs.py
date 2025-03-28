@@ -1,6 +1,5 @@
 """
-Used by the navigator class to track position and orientation
-TODO -> integrate this
+Used by the web server to track the current position and orientation of our "mobile" robot
 """
 
 import numpy as np
