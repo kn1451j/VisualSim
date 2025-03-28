@@ -21,7 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             'service = navigation.navigator_node:main',
-            'client = navigation.mapper_node:main',
+            'client = navigation.trajectory_node:main',
         ],
     },
 )

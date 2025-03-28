@@ -15,7 +15,7 @@ find_package(rosidl_default_generators REQUIRED)
 # find_package(<dependency> REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "action/Detection.action"
+  "action/Location.action"
   DEPENDENCIES geometry_msgs sensor_msgs
 )
 

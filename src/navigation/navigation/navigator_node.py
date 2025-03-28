@@ -4,8 +4,9 @@ A basic ROS2 node that simulates naive navigation, POSTs the position estimates 
 
 import rclpy
 from rclpy.node import Node
+from geometry_msgs.msg import Point
 from rclpy.action import ActionClient
-from interfaces.action import Detection
+from interfaces.action import Location
 import yaml
 import os
 import requests
@@ -15,7 +16,7 @@ class NavigatorNode(Node):
         super().__init__('navigator_client')
 
         # Declare parameters for configuration (endpoint URL)
-        self.declare_parameter('endpoint_url', 'http://127.0.0.1:5000/')  # Default URL
+        self.declare_parameter('endpoint_url', 'http://192.168.1.153:2351/get-coords')  # Default URL
 
         # Load the Flask endpoint URL from the parameter server
         self.url = self.get_parameter('endpoint_url').get_parameter_value().string_value
@@ -24,8 +25,8 @@ class NavigatorNode(Node):
         # Create a subscriber to listen to a string topic
         self.action_client = ActionClient(
             self,
-            Detection,
-            'map_detection'
+            Location,
+            'location_found'
         )
         
         # Timer to request data from the flask server every second
@@ -38,9 +39,14 @@ class NavigatorNode(Node):
             response = requests.get(self.url)
             if response.status_code == 200:
                 # Now we send the response to the client
-                print(response)
-                goal_msg = Detection.Goal()
-                goal_msg.img = response.image
+                pose = response.json()
+                goal_msg = Location.Goal()
+
+                # Prepare our message
+                goal_msg.pose = Point()
+                goal_msg.pose.x = float(pose['x'])
+                goal_msg.pose.y = float(pose['y'])
+                goal_msg.pose.z = float(pose['z'])
 
                 self.action_client.wait_for_server()
 
