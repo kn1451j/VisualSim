@@ -1,7 +1,7 @@
 from flask import Flask, request, render_template, jsonify, Response, send_from_directory
 from .render_img import Render
 import numpy as np
-from src.constructs import Position, Orientation
+from navigation.navigation.constructs import Position, Orientation
 import os
 
 app = Flask(__name__, template_folder='')
@@ -40,11 +40,6 @@ def home():
 def get_image():
     # Return the image as a response with the appropriate content-type
     return Response(image, content_type='image/jpeg')
-
-# GET route to retrieve the stored coordinates
-@app.route('/get-coords', methods=['GET'])
-def get_data():
-    return jsonify(position.to_array(), orientation.to_array()), 200
 
 if __name__ == '__main__':
     # Render inital gaussian to the image based on image coordinates

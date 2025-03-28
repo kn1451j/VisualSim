@@ -1,0 +1,4 @@
+[console_scripts]
+client = navigation.mapper_node:main
+service = navigation.navigator_node:main
+

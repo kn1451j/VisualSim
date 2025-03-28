@@ -1,0 +1,50 @@
+[0.329s] Invoking command in '/home/parallels/VisualSim/src/navigation': AMENT_PREFIX_PATH=/home/parallels/VisualSim/src/install/interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/parallels/VisualSim/src/install/interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/parallels/VisualSim/src/install/interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/parallels/VisualSim/src/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/parallels/VisualSim/src/install/navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/navigation build --build-base /home/parallels/VisualSim/src/build/navigation/build install --record /home/parallels/VisualSim/src/build/navigation/install.log --single-version-externally-managed install_data
+[0.452s] running egg_info
+[0.452s] creating ../build/navigation/navigation.egg-info
+[0.452s] writing ../build/navigation/navigation.egg-info/PKG-INFO
+[0.453s] writing dependency_links to ../build/navigation/navigation.egg-info/dependency_links.txt
+[0.453s] writing entry points to ../build/navigation/navigation.egg-info/entry_points.txt
+[0.453s] writing requirements to ../build/navigation/navigation.egg-info/requires.txt
+[0.453s] writing top-level names to ../build/navigation/navigation.egg-info/top_level.txt
+[0.453s] writing manifest file '../build/navigation/navigation.egg-info/SOURCES.txt'
+[0.454s] reading manifest file '../build/navigation/navigation.egg-info/SOURCES.txt'
+[0.454s] writing manifest file '../build/navigation/navigation.egg-info/SOURCES.txt'
+[0.455s] running build
+[0.455s] running build_py
+[0.455s] creating /home/parallels/VisualSim/src/build/navigation/build
+[0.455s] creating /home/parallels/VisualSim/src/build/navigation/build/lib
+[0.455s] creating /home/parallels/VisualSim/src/build/navigation/build/lib/navigation
+[0.455s] copying navigation/navigator.py -> /home/parallels/VisualSim/src/build/navigation/build/lib/navigation
+[0.455s] copying navigation/mapper_node.py -> /home/parallels/VisualSim/src/build/navigation/build/lib/navigation
+[0.455s] copying navigation/navigator_node.py -> /home/parallels/VisualSim/src/build/navigation/build/lib/navigation
+[0.455s] copying navigation/constructs.py -> /home/parallels/VisualSim/src/build/navigation/build/lib/navigation
+[0.455s] copying navigation/mapper.py -> /home/parallels/VisualSim/src/build/navigation/build/lib/navigation
+[0.455s] copying navigation/__init__.py -> /home/parallels/VisualSim/src/build/navigation/build/lib/navigation
+[0.455s] running install
+[0.455s] running install_lib
+[0.456s] creating /home/parallels/VisualSim/src/install/navigation/lib/python3.10/site-packages/navigation
+[0.456s] copying /home/parallels/VisualSim/src/build/navigation/build/lib/navigation/navigator.py -> /home/parallels/VisualSim/src/install/navigation/lib/python3.10/site-packages/navigation
+[0.456s] copying /home/parallels/VisualSim/src/build/navigation/build/lib/navigation/mapper_node.py -> /home/parallels/VisualSim/src/install/navigation/lib/python3.10/site-packages/navigation
+[0.456s] copying /home/parallels/VisualSim/src/build/navigation/build/lib/navigation/navigator_node.py -> /home/parallels/VisualSim/src/install/navigation/lib/python3.10/site-packages/navigation
+[0.456s] copying /home/parallels/VisualSim/src/build/navigation/build/lib/navigation/constructs.py -> /home/parallels/VisualSim/src/install/navigation/lib/python3.10/site-packages/navigation
+[0.456s] copying /home/parallels/VisualSim/src/build/navigation/build/lib/navigation/mapper.py -> /home/parallels/VisualSim/src/install/navigation/lib/python3.10/site-packages/navigation
+[0.456s] copying /home/parallels/VisualSim/src/build/navigation/build/lib/navigation/__init__.py -> /home/parallels/VisualSim/src/install/navigation/lib/python3.10/site-packages/navigation
+[0.456s] byte-compiling /home/parallels/VisualSim/src/install/navigation/lib/python3.10/site-packages/navigation/navigator.py to navigator.cpython-310.pyc
+[0.457s] byte-compiling /home/parallels/VisualSim/src/install/navigation/lib/python3.10/site-packages/navigation/mapper_node.py to mapper_node.cpython-310.pyc
+[0.457s] byte-compiling /home/parallels/VisualSim/src/install/navigation/lib/python3.10/site-packages/navigation/navigator_node.py to navigator_node.cpython-310.pyc
+[0.457s] byte-compiling /home/parallels/VisualSim/src/install/navigation/lib/python3.10/site-packages/navigation/constructs.py to constructs.cpython-310.pyc
+[0.457s] byte-compiling /home/parallels/VisualSim/src/install/navigation/lib/python3.10/site-packages/navigation/mapper.py to mapper.cpython-310.pyc
+[0.457s] byte-compiling /home/parallels/VisualSim/src/install/navigation/lib/python3.10/site-packages/navigation/__init__.py to __init__.cpython-310.pyc
+[0.457s] running install_data
+[0.457s] creating /home/parallels/VisualSim/src/install/navigation/share/ament_index
+[0.458s] creating /home/parallels/VisualSim/src/install/navigation/share/ament_index/resource_index
+[0.458s] creating /home/parallels/VisualSim/src/install/navigation/share/ament_index/resource_index/packages
+[0.458s] copying resource/navigation -> /home/parallels/VisualSim/src/install/navigation/share/ament_index/resource_index/packages
+[0.458s] copying package.xml -> /home/parallels/VisualSim/src/install/navigation/share/navigation
+[0.458s] running install_egg_info
+[0.459s] Copying ../build/navigation/navigation.egg-info to /home/parallels/VisualSim/src/install/navigation/lib/python3.10/site-packages/navigation-0.0.0-py3.10.egg-info
+[0.459s] running install_scripts
+[0.469s] Installing client script to /home/parallels/VisualSim/src/install/navigation/lib/navigation
+[0.469s] Installing service script to /home/parallels/VisualSim/src/install/navigation/lib/navigation
+[0.469s] writing list of installed files to '/home/parallels/VisualSim/src/build/navigation/install.log'
+[0.482s] Invoked command in '/home/parallels/VisualSim/src/navigation' returned '0': AMENT_PREFIX_PATH=/home/parallels/VisualSim/src/install/interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/parallels/VisualSim/src/install/interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/parallels/VisualSim/src/install/interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/parallels/VisualSim/src/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/parallels/VisualSim/src/install/navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/navigation build --build-base /home/parallels/VisualSim/src/build/navigation/build install --record /home/parallels/VisualSim/src/build/navigation/install.log --single-version-externally-managed install_data

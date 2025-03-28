@@ -1,0 +1,18 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from interfaces/srv/Detection.srv
+// generated code does not contain a copyright notice
+
+#include "sensor_msgs/msg/Image.idl"
+
+module interfaces {
+  module srv {
+    @verbatim (language="comment", text=
+      "geometry_msgs/Pose pose")
+    struct Detection_Request {
+      sensor_msgs::msg::Image img;
+    };
+    struct Detection_Response {
+      boolean recieved;
+    };
+  };
+};

@@ -1,0 +1,338 @@
+[0.000000] (-) TimerEvent: {}
+[0.000145] (interfaces) JobQueued: {'identifier': 'interfaces', 'dependencies': OrderedDict()}
+[0.000173] (navigation) JobQueued: {'identifier': 'navigation', 'dependencies': OrderedDict([('interfaces', '/home/parallels/VisualSim/src/install/interfaces')])}
+[0.000185] (interfaces) JobStarted: {'identifier': 'interfaces'}
+[0.005004] (interfaces) JobProgress: {'identifier': 'interfaces', 'progress': 'cmake'}
+[0.005680] (interfaces) JobProgress: {'identifier': 'interfaces', 'progress': 'build'}
+[0.005708] (interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/parallels/VisualSim/src/build/interfaces', '--', '-j2', '-l2'], 'cwd': '/home/parallels/VisualSim/src/build/interfaces', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'parallels'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/parallels/VisualSim/src/install/interfaces/lib:/home/parallels/VisualSim/install/interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/parallels'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/parallels/VisualSim'), ('TERM_PROGRAM_VERSION', '1.82.0'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1860'), ('SYSTEMD_EXEC_PID', '1968'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '1067725'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/parallels/VisualSim/src/install:/home/parallels/VisualSim/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'parallels'), ('JOURNAL_STREAM', '8:25265'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'parallels'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/parallels/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-linux-22-04-desktop:@/tmp/.ICE-unix/1946,unix/ubuntu-linux-22-04-desktop:/tmp/.ICE-unix/1946'), ('INVOCATION_ID', 'a502f324978342c7b79e852457307f9f'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.ECDVX2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-f130e7d8e9.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/parallels/VisualSim/src/install/navigation:/home/parallels/VisualSim/src/install/interfaces:/home/parallels/VisualSim/install/py_srvcli:/home/parallels/VisualSim/install/navigation:/home/parallels/VisualSim/install/interfaces:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/parallels/VisualSim/src/build/interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/parallels/VisualSim/src/install/navigation/lib/python3.10/site-packages:/home/parallels/VisualSim/src/install/interfaces/local/lib/python3.10/dist-packages:/home/parallels/VisualSim/install/py_srvcli/lib/python3.10/site-packages:/home/parallels/VisualSim/install/navigation/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/parallels/VisualSim/src/install/interfaces:/home/parallels/VisualSim/install/interfaces:/home/parallels/VisualSim/src/install/navigation:/home/parallels/VisualSim/install/py_srvcli:/home/parallels/VisualSim/install/navigation:/opt/ros/humble')]), 'shell': False}
+[0.027427] (interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099464] (-) TimerEvent: {}
+[0.114808] (interfaces) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.132403] (interfaces) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.133990] (interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.137717] (interfaces) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.143894] (interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.152546] (interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.177659] (interfaces) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.189197] (interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.199560] (-) TimerEvent: {}
+[0.299844] (-) TimerEvent: {}
+[0.400804] (-) TimerEvent: {}
+[0.410502] (interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.500944] (-) TimerEvent: {}
+[0.601209] (-) TimerEvent: {}
+[0.701654] (-) TimerEvent: {}
+[0.726808] (interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.802151] (-) TimerEvent: {}
+[0.845675] (interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.858233] (interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[0.870401] (interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.870679] (interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[0.870913] (interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so\n'}
+[0.902581] (-) TimerEvent: {}
+[0.908788] (interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.914121] (interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.914607] (interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.915683] (interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.945704] (interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[0.948318] (interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/parallels/VisualSim/src/build/interfaces\n'}
+[0.964221] (interfaces) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[0.967513] (interfaces) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.002676] (-) TimerEvent: {}
+[1.103170] (-) TimerEvent: {}
+[1.203557] (-) TimerEvent: {}
+[1.227599] (interfaces) StdoutLine: {'line': b'[  6%] Built target interfaces__cpp\n'}
+[1.245645] (interfaces) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_copy_interfaces\n'}
+[1.252031] (interfaces) StdoutLine: {'line': b'[  9%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.253572] (interfaces) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_generator_c.dir/rosidl_generator_c/interfaces/action/detail/detection__functions.c.o\x1b[0m\n'}
+[1.303645] (-) TimerEvent: {}
+[1.339806] (interfaces) StdoutLine: {'line': b'[ 16%] \x1b[32m\x1b[1mLinking C shared library libinterfaces__rosidl_generator_c.so\x1b[0m\n'}
+[1.362147] (interfaces) StdoutLine: {'line': b'[ 16%] Built target interfaces__rosidl_generator_c\n'}
+[1.367009] (interfaces) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.403751] (-) TimerEvent: {}
+[1.433829] (interfaces) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interfaces/action/detection__type_support.cpp.o\x1b[0m\n'}
+[1.503852] (-) TimerEvent: {}
+[1.604361] (-) TimerEvent: {}
+[1.618822] (interfaces) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interfaces/action/detail/dds_fastrtps/detection__type_support.cpp.o\x1b[0m\n'}
+[1.704472] (-) TimerEvent: {}
+[1.754640] (interfaces) StdoutLine: {'line': b'[ 29%] \x1b[32m\x1b[1mLinking CXX shared library libinterfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[1.785690] (interfaces) StdoutLine: {'line': b'[ 29%] Built target interfaces__rosidl_typesupport_cpp\n'}
+[1.797780] (interfaces) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[1.804542] (-) TimerEvent: {}
+[1.904809] (-) TimerEvent: {}
+[1.946904] (interfaces) StdoutLine: {'line': b'[ 35%] \x1b[32m\x1b[1mLinking CXX shared library libinterfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[1.985868] (interfaces) StdoutLine: {'line': b'[ 35%] Built target interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[1.990804] (interfaces) StdoutLine: {'line': b'[ 38%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.006410] (-) TimerEvent: {}
+[2.027117] (interfaces) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interfaces/action/detail/detection__type_support.c.o\x1b[0m\n'}
+[2.064555] (interfaces) StdoutLine: {'line': b'[ 45%] \x1b[32m\x1b[1mLinking C shared library libinterfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[2.083809] (interfaces) StdoutLine: {'line': b'[ 45%] Built target interfaces__rosidl_typesupport_introspection_c\n'}
+[2.089531] (interfaces) StdoutLine: {'line': b'[ 48%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.106488] (-) TimerEvent: {}
+[2.152442] (interfaces) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/interfaces/action/detection__type_support.cpp.o\x1b[0m\n'}
+[2.193035] (interfaces) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX shared library libinterfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[2.206574] (-) TimerEvent: {}
+[2.218498] (interfaces) StdoutLine: {'line': b'[ 54%] Built target interfaces__rosidl_typesupport_c\n'}
+[2.280692] (interfaces) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interfaces/action/detail/detection__type_support.cpp.o\x1b[0m\n'}
+[2.306679] (-) TimerEvent: {}
+[2.359802] (interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[2.360182] (interfaces) StdoutLine: {'line': b'writing interfaces.egg-info/PKG-INFO\n'}
+[2.360529] (interfaces) StdoutLine: {'line': b'writing dependency_links to interfaces.egg-info/dependency_links.txt\n'}
+[2.360837] (interfaces) StdoutLine: {'line': b'writing top-level names to interfaces.egg-info/top_level.txt\n'}
+[2.361714] (interfaces) StdoutLine: {'line': b"reading manifest file 'interfaces.egg-info/SOURCES.txt'\n"}
+[2.362013] (interfaces) StdoutLine: {'line': b"writing manifest file 'interfaces.egg-info/SOURCES.txt'\n"}
+[2.377662] (interfaces) StdoutLine: {'line': b'[ 58%] Built target ament_cmake_python_build_interfaces_egg\n'}
+[2.382639] (interfaces) StdoutLine: {'line': b'[ 61%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.406770] (-) TimerEvent: {}
+[2.507304] (-) TimerEvent: {}
+[2.602297] (interfaces) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interfaces/action/detail/detection__type_support_c.cpp.o\x1b[0m\n'}
+[2.607386] (-) TimerEvent: {}
+[2.628518] (interfaces) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library libinterfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[2.678586] (interfaces) StdoutLine: {'line': b'[ 67%] Built target interfaces__rosidl_typesupport_introspection_cpp\n'}
+[2.708045] (-) TimerEvent: {}
+[2.802913] (interfaces) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libinterfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[2.808111] (-) TimerEvent: {}
+[2.847558] (interfaces) StdoutLine: {'line': b'[ 70%] Built target interfaces__rosidl_typesupport_fastrtps_c\n'}
+[2.857009] (interfaces) StdoutLine: {'line': b'[ 70%] Built target interfaces\n'}
+[2.866443] (interfaces) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[2.908202] (-) TimerEvent: {}
+[3.008495] (-) TimerEvent: {}
+[3.108824] (-) TimerEvent: {}
+[3.209060] (-) TimerEvent: {}
+[3.255596] (interfaces) StdoutLine: {'line': b'[ 74%] Built target interfaces__py\n'}
+[3.265677] (interfaces) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/action/_detection_s.c.o\x1b[0m\n'}
+[3.309901] (-) TimerEvent: {}
+[3.346991] (interfaces) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/interfaces/libinterfaces__rosidl_generator_py.so\x1b[0m\n'}
+[3.370605] (interfaces) StdoutLine: {'line': b'[ 80%] Built target interfaces__rosidl_generator_py\n'}
+[3.375621] (interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target interfaces__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[3.377056] (interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target interfaces__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[3.382710] (interfaces) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[3.387604] (interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[3.409994] (-) TimerEvent: {}
+[3.457351] (interfaces) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/interfaces/interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[3.458720] (interfaces) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[3.482681] (interfaces) StdoutLine: {'line': b'[ 93%] Built target interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[3.483240] (interfaces) StdoutLine: {'line': b'[ 93%] Built target interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[3.493016] (interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target interfaces__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[3.499040] (interfaces) StdoutLine: {'line': b'[ 96%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[3.510319] (-) TimerEvent: {}
+[3.567013] (interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/interfaces/interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[3.592273] (interfaces) StdoutLine: {'line': b'[100%] Built target interfaces__rosidl_typesupport_c__pyext\n'}
+[3.602975] (interfaces) CommandEnded: {'returncode': 0}
+[3.610472] (-) TimerEvent: {}
+[3.641516] (interfaces) JobProgress: {'identifier': 'interfaces', 'progress': 'install'}
+[3.648645] (interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/parallels/VisualSim/src/build/interfaces'], 'cwd': '/home/parallels/VisualSim/src/build/interfaces', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'parallels'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/parallels/VisualSim/src/install/interfaces/lib:/home/parallels/VisualSim/install/interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/parallels'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/parallels/VisualSim'), ('TERM_PROGRAM_VERSION', '1.82.0'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1860'), ('SYSTEMD_EXEC_PID', '1968'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '1067725'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/parallels/VisualSim/src/install:/home/parallels/VisualSim/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'parallels'), ('JOURNAL_STREAM', '8:25265'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'parallels'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/parallels/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-linux-22-04-desktop:@/tmp/.ICE-unix/1946,unix/ubuntu-linux-22-04-desktop:/tmp/.ICE-unix/1946'), ('INVOCATION_ID', 'a502f324978342c7b79e852457307f9f'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.ECDVX2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-f130e7d8e9.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/parallels/VisualSim/src/install/navigation:/home/parallels/VisualSim/src/install/interfaces:/home/parallels/VisualSim/install/py_srvcli:/home/parallels/VisualSim/install/navigation:/home/parallels/VisualSim/install/interfaces:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/parallels/VisualSim/src/build/interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/parallels/VisualSim/src/install/navigation/lib/python3.10/site-packages:/home/parallels/VisualSim/src/install/interfaces/local/lib/python3.10/dist-packages:/home/parallels/VisualSim/install/py_srvcli/lib/python3.10/site-packages:/home/parallels/VisualSim/install/navigation/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/parallels/VisualSim/src/install/interfaces:/home/parallels/VisualSim/install/interfaces:/home/parallels/VisualSim/src/install/navigation:/home/parallels/VisualSim/install/py_srvcli:/home/parallels/VisualSim/install/navigation:/opt/ros/humble')]), 'shell': False}
+[3.652856] (interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.661856] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/share/ament_index/resource_index/rosidl_interfaces/interfaces\n'}
+[3.661931] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces\n'}
+[3.661962] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/msg\n'}
+[3.661991] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[3.662024] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/action\n'}
+[3.662052] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/action/detail\n'}
+[3.662080] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/action/detail/detection__type_support.h\n'}
+[3.662109] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/action/detail/detection__functions.h\n'}
+[3.662180] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/action/detail/detection__functions.c\n'}
+[3.662213] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/action/detail/detection__struct.h\n'}
+[3.662241] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/action/detection.h\n'}
+[3.662293] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/srv\n'}
+[3.662322] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/srv/detail\n'}
+[3.662350] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/srv/detail/detection__type_support.h\n'}
+[3.662386] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/srv/detail/detection__functions.h\n'}
+[3.662414] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/srv/detail/detection__functions.c\n'}
+[3.662442] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/srv/detail/detection__struct.h\n'}
+[3.662468] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/srv/detection.h\n'}
+[3.662497] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/share/interfaces/environment/library_path.sh\n'}
+[3.662526] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/share/interfaces/environment/library_path.dsv\n'}
+[3.662562] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/lib/libinterfaces__rosidl_generator_c.so\n'}
+[3.662599] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/parallels/VisualSim/src/install/interfaces/lib/libinterfaces__rosidl_generator_c.so" to ""\n'}
+[3.662631] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces\n'}
+[3.662659] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/msg\n'}
+[3.662688] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[3.662719] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/action\n'}
+[3.662747] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/action/detail\n'}
+[3.662778] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/action/detail/detection__rosidl_typesupport_fastrtps_c.h\n'}
+[3.662806] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/srv\n'}
+[3.662851] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/srv/detail\n'}
+[3.662880] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/srv/detail/detection__rosidl_typesupport_fastrtps_c.h\n'}
+[3.662907] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[3.662950] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/parallels/VisualSim/src/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[3.662977] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces\n'}
+[3.663064] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/action\n'}
+[3.663097] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/action/detail\n'}
+[3.663124] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/action/detail/detection__builder.hpp\n'}
+[3.663165] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/action/detail/detection__traits.hpp\n'}
+[3.663193] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/action/detail/detection__struct.hpp\n'}
+[3.663221] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/action/detection.hpp\n'}
+[3.663251] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/srv\n'}
+[3.663279] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/srv/detail\n'}
+[3.663306] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/srv/detail/detection__builder.hpp\n'}
+[3.663336] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/srv/detail/detection__traits.hpp\n'}
+[3.663364] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/srv/detail/detection__struct.hpp\n'}
+[3.663394] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/srv/detection.hpp\n'}
+[3.663426] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces\n'}
+[3.663454] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/msg\n'}
+[3.663481] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[3.663535] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/action\n'}
+[3.663575] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/action/detail\n'}
+[3.663603] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/action/detail/dds_fastrtps\n'}
+[3.663653] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/action/detail/detection__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.663683] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/srv\n'}
+[3.663710] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/srv/detail\n'}
+[3.663737] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/srv/detail/dds_fastrtps\n'}
+[3.663765] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/srv/detail/detection__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.663796] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[3.663823] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/parallels/VisualSim/src/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[3.663858] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces\n'}
+[3.663886] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/msg\n'}
+[3.663913] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[3.663943] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/action\n'}
+[3.663971] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/action/detail\n'}
+[3.663998] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/action/detail/detection__type_support.c\n'}
+[3.664026] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/action/detail/detection__rosidl_typesupport_introspection_c.h\n'}
+[3.664053] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/srv\n'}
+[3.664117] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/srv/detail\n'}
+[3.664161] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/srv/detail/detection__type_support.c\n'}
+[3.664191] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/srv/detail/detection__rosidl_typesupport_introspection_c.h\n'}
+[3.664219] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_c.so\n'}
+[3.664248] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/parallels/VisualSim/src/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[3.664276] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/lib/libinterfaces__rosidl_typesupport_c.so\n'}
+[3.664314] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/parallels/VisualSim/src/install/interfaces/lib/libinterfaces__rosidl_typesupport_c.so" to ""\n'}
+[3.664347] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces\n'}
+[3.664374] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/action\n'}
+[3.664401] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/action/detail\n'}
+[3.664428] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/action/detail/detection__type_support.cpp\n'}
+[3.664455] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/action/detail/detection__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.664482] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/srv\n'}
+[3.664510] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/srv/detail\n'}
+[3.664576] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/srv/detail/detection__type_support.cpp\n'}
+[3.664606] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/include/interfaces/interfaces/srv/detail/detection__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.664633] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[3.664660] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/parallels/VisualSim/src/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[3.664688] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/lib/libinterfaces__rosidl_typesupport_cpp.so\n'}
+[3.664716] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/parallels/VisualSim/src/install/interfaces/lib/libinterfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[3.664743] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/share/interfaces/environment/pythonpath.sh\n'}
+[3.664770] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/share/interfaces/environment/pythonpath.dsv\n'}
+[3.664797] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/local/lib/python3.10/dist-packages/interfaces-0.0.0-py3.10.egg-info\n'}
+[3.664825] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/local/lib/python3.10/dist-packages/interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[3.664852] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/local/lib/python3.10/dist-packages/interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[3.664881] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/local/lib/python3.10/dist-packages/interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[3.664909] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/local/lib/python3.10/dist-packages/interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[3.664936] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/local/lib/python3.10/dist-packages/interfaces\n'}
+[3.664964] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/local/lib/python3.10/dist-packages/interfaces/libinterfaces__rosidl_generator_py.so\n'}
+[3.664991] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[3.665021] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[3.665049] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/local/lib/python3.10/dist-packages/interfaces/_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[3.665077] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[3.665104] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/local/lib/python3.10/dist-packages/interfaces/_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[3.665131] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/local/lib/python3.10/dist-packages/interfaces/action\n'}
+[3.665158] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/local/lib/python3.10/dist-packages/interfaces/action/_detection_s.c\n'}
+[3.665185] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/local/lib/python3.10/dist-packages/interfaces/action/_detection.py\n'}
+[3.665214] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/local/lib/python3.10/dist-packages/interfaces/action/__init__.py\n'}
+[3.665241] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/local/lib/python3.10/dist-packages/interfaces/__init__.py\n'}
+[3.665268] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/local/lib/python3.10/dist-packages/interfaces/srv\n'}
+[3.665295] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/local/lib/python3.10/dist-packages/interfaces/srv/_detection_s.c\n'}
+[3.665323] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/local/lib/python3.10/dist-packages/interfaces/srv/_detection.py\n'}
+[3.665350] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/local/lib/python3.10/dist-packages/interfaces/srv/__init__.py\n'}
+[3.665392] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/local/lib/python3.10/dist-packages/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[3.685432] (interfaces) StdoutLine: {'line': b"Listing '/home/parallels/VisualSim/src/install/interfaces/local/lib/python3.10/dist-packages/interfaces'...\n"}
+[3.685557] (interfaces) StdoutLine: {'line': b"Compiling '/home/parallels/VisualSim/src/install/interfaces/local/lib/python3.10/dist-packages/interfaces/__init__.py'...\n"}
+[3.685591] (interfaces) StdoutLine: {'line': b"Listing '/home/parallels/VisualSim/src/install/interfaces/local/lib/python3.10/dist-packages/interfaces/action'...\n"}
+[3.685620] (interfaces) StdoutLine: {'line': b"Compiling '/home/parallels/VisualSim/src/install/interfaces/local/lib/python3.10/dist-packages/interfaces/action/__init__.py'...\n"}
+[3.685649] (interfaces) StdoutLine: {'line': b"Compiling '/home/parallels/VisualSim/src/install/interfaces/local/lib/python3.10/dist-packages/interfaces/action/_detection.py'...\n"}
+[3.685676] (interfaces) StdoutLine: {'line': b"Listing '/home/parallels/VisualSim/src/install/interfaces/local/lib/python3.10/dist-packages/interfaces/srv'...\n"}
+[3.688505] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[3.688674] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/parallels/VisualSim/src/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[3.688799] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[3.688976] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/parallels/VisualSim/src/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[3.689095] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[3.689286] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/parallels/VisualSim/src/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[3.689418] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/lib/libinterfaces__rosidl_generator_py.so\n'}
+[3.689755] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/parallels/VisualSim/src/install/interfaces/lib/libinterfaces__rosidl_generator_py.so" to ""\n'}
+[3.689877] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/share/interfaces/action/Detection.idl\n'}
+[3.689984] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/share/interfaces/action/Detection.action\n'}
+[3.690061] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/share/ament_index/resource_index/package_run_dependencies/interfaces\n'}
+[3.690142] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/share/ament_index/resource_index/parent_prefix_path/interfaces\n'}
+[3.690211] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/share/interfaces/environment/ament_prefix_path.sh\n'}
+[3.690240] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/share/interfaces/environment/ament_prefix_path.dsv\n'}
+[3.690312] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/share/interfaces/environment/path.sh\n'}
+[3.690356] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/share/interfaces/environment/path.dsv\n'}
+[3.690440] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/share/interfaces/local_setup.bash\n'}
+[3.690511] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/share/interfaces/local_setup.sh\n'}
+[3.690539] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/share/interfaces/local_setup.zsh\n'}
+[3.690647] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/share/interfaces/local_setup.dsv\n'}
+[3.690751] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/share/interfaces/package.dsv\n'}
+[3.690865] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/share/ament_index/resource_index/packages/interfaces\n'}
+[3.690925] (interfaces) StdoutLine: {'line': b'-- Old export file "/home/parallels/VisualSim/src/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_cExport.cmake" will be replaced.  Removing files [/home/parallels/VisualSim/src/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_cExport-noconfig.cmake].\n'}
+[3.690995] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_cExport.cmake\n'}
+[3.691084] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[3.691237] (interfaces) StdoutLine: {'line': b'-- Old export file "/home/parallels/VisualSim/src/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cExport.cmake" will be replaced.  Removing files [/home/parallels/VisualSim/src/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake].\n'}
+[3.691295] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[3.691401] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[3.691518] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_cppExport.cmake\n'}
+[3.691655] (interfaces) StdoutLine: {'line': b'-- Old export file "/home/parallels/VisualSim/src/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake" will be replaced.  Removing files [/home/parallels/VisualSim/src/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake].\n'}
+[3.691703] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[3.691814] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[3.691950] (interfaces) StdoutLine: {'line': b'-- Old export file "/home/parallels/VisualSim/src/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cExport.cmake" will be replaced.  Removing files [/home/parallels/VisualSim/src/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake].\n'}
+[3.692000] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[3.692132] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[3.692242] (interfaces) StdoutLine: {'line': b'-- Old export file "/home/parallels/VisualSim/src/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cExport.cmake" will be replaced.  Removing files [/home/parallels/VisualSim/src/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cExport-noconfig.cmake].\n'}
+[3.692293] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cExport.cmake\n'}
+[3.692384] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[3.692531] (interfaces) StdoutLine: {'line': b'-- Old export file "/home/parallels/VisualSim/src/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cppExport.cmake" will be replaced.  Removing files [/home/parallels/VisualSim/src/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake].\n'}
+[3.692599] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[3.692680] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[3.692802] (interfaces) StdoutLine: {'line': b'-- Old export file "/home/parallels/VisualSim/src/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cppExport.cmake" will be replaced.  Removing files [/home/parallels/VisualSim/src/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cppExport-noconfig.cmake].\n'}
+[3.692869] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[3.692995] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[3.693112] (interfaces) StdoutLine: {'line': b'-- Old export file "/home/parallels/VisualSim/src/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_pyExport.cmake" will be replaced.  Removing files [/home/parallels/VisualSim/src/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_pyExport-noconfig.cmake].\n'}
+[3.693194] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_pyExport.cmake\n'}
+[3.693328] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[3.693404] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/share/interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[3.693489] (interfaces) StdoutLine: {'line': b'-- Installing: /home/parallels/VisualSim/src/install/interfaces/share/interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[3.693617] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/share/interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[3.693660] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/share/interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[3.693705] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/share/interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[3.693743] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/share/interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[3.693787] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/share/interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[3.693839] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/share/interfaces/cmake/interfacesConfig.cmake\n'}
+[3.693902] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/share/interfaces/cmake/interfacesConfig-version.cmake\n'}
+[3.693960] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/VisualSim/src/install/interfaces/share/interfaces/package.xml\n'}
+[3.695533] (interfaces) CommandEnded: {'returncode': 0}
+[3.714076] (-) TimerEvent: {}
+[3.744994] (interfaces) JobEnded: {'identifier': 'interfaces', 'rc': 0}
+[3.745444] (navigation) JobStarted: {'identifier': 'navigation'}
+[3.814203] (-) TimerEvent: {}
+[3.914749] (-) TimerEvent: {}
+[4.015160] (-) TimerEvent: {}
+[4.095271] (navigation) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../build/navigation', 'build', '--build-base', '/home/parallels/VisualSim/src/build/navigation/build', 'install', '--record', '/home/parallels/VisualSim/src/build/navigation/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/parallels/VisualSim/src/navigation', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'parallels', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/parallels/VisualSim/src/install/interfaces/lib:/home/parallels/VisualSim/install/interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/parallels', 'CHROME_DESKTOP': 'code-url-handler.desktop', 'OLDPWD': '/home/parallels/VisualSim', 'TERM_PROGRAM_VERSION': '1.82.0', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'MANAGERPID': '1860', 'SYSTEMD_EXEC_PID': '1968', 'IM_CONFIG_CHECK_ENV': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '1067725', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/parallels/VisualSim/src/install:/home/parallels/VisualSim/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'parallels', 'JOURNAL_STREAM': '8:25265', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'parallels', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/parallels/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ubuntu-linux-22-04-desktop:@/tmp/.ICE-unix/1946,unix/ubuntu-linux-22-04-desktop:/tmp/.ICE-unix/1946', 'INVOCATION_ID': 'a502f324978342c7b79e852457307f9f', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.ECDVX2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-f130e7d8e9.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/parallels/VisualSim/src/install/navigation:/home/parallels/VisualSim/src/install/interfaces:/home/parallels/VisualSim/install/py_srvcli:/home/parallels/VisualSim/install/navigation:/home/parallels/VisualSim/install/interfaces:/opt/ros/humble', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GJS_DEBUG_OUTPUT': 'stderr', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '--ms-enable-electron-run-as-node', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/parallels/VisualSim/src/build/navigation', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/parallels/VisualSim/src/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/parallels/VisualSim/src/install/navigation/lib/python3.10/site-packages:/home/parallels/VisualSim/src/install/navigation/lib/python3.10/site-packages:/home/parallels/VisualSim/src/install/interfaces/local/lib/python3.10/dist-packages:/home/parallels/VisualSim/install/py_srvcli/lib/python3.10/site-packages:/home/parallels/VisualSim/install/navigation/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/parallels/VisualSim/src/install/interfaces:/home/parallels/VisualSim/install/interfaces'}, 'shell': False}
+[4.116050] (-) TimerEvent: {}
+[4.216915] (-) TimerEvent: {}
+[4.262976] (navigation) StdoutLine: {'line': b'running egg_info\n'}
+[4.264121] (navigation) StdoutLine: {'line': b'writing ../build/navigation/navigation.egg-info/PKG-INFO\n'}
+[4.265101] (navigation) StdoutLine: {'line': b'writing dependency_links to ../build/navigation/navigation.egg-info/dependency_links.txt\n'}
+[4.265607] (navigation) StdoutLine: {'line': b'writing entry points to ../build/navigation/navigation.egg-info/entry_points.txt\n'}
+[4.266033] (navigation) StdoutLine: {'line': b'writing requirements to ../build/navigation/navigation.egg-info/requires.txt\n'}
+[4.266471] (navigation) StdoutLine: {'line': b'writing top-level names to ../build/navigation/navigation.egg-info/top_level.txt\n'}
+[4.267933] (navigation) StdoutLine: {'line': b"reading manifest file '../build/navigation/navigation.egg-info/SOURCES.txt'\n"}
+[4.268725] (navigation) StdoutLine: {'line': b"writing manifest file '../build/navigation/navigation.egg-info/SOURCES.txt'\n"}
+[4.269140] (navigation) StdoutLine: {'line': b'running build\n'}
+[4.269389] (navigation) StdoutLine: {'line': b'running build_py\n'}
+[4.269790] (navigation) StdoutLine: {'line': b'copying navigation/mapper_node.py -> /home/parallels/VisualSim/src/build/navigation/build/lib/navigation\n'}
+[4.270185] (navigation) StdoutLine: {'line': b'copying navigation/navigator_node.py -> /home/parallels/VisualSim/src/build/navigation/build/lib/navigation\n'}
+[4.270671] (navigation) StdoutLine: {'line': b'running install\n'}
+[4.271116] (navigation) StdoutLine: {'line': b'running install_lib\n'}
+[4.271844] (navigation) StdoutLine: {'line': b'copying /home/parallels/VisualSim/src/build/navigation/build/lib/navigation/mapper_node.py -> /home/parallels/VisualSim/src/install/navigation/lib/python3.10/site-packages/navigation\n'}
+[4.272208] (navigation) StdoutLine: {'line': b'copying /home/parallels/VisualSim/src/build/navigation/build/lib/navigation/navigator_node.py -> /home/parallels/VisualSim/src/install/navigation/lib/python3.10/site-packages/navigation\n'}
+[4.272811] (navigation) StdoutLine: {'line': b'byte-compiling /home/parallels/VisualSim/src/install/navigation/lib/python3.10/site-packages/navigation/mapper_node.py to mapper_node.cpython-310.pyc\n'}
+[4.273435] (navigation) StdoutLine: {'line': b'byte-compiling /home/parallels/VisualSim/src/install/navigation/lib/python3.10/site-packages/navigation/navigator_node.py to navigator_node.cpython-310.pyc\n'}
+[4.274084] (navigation) StdoutLine: {'line': b'running install_data\n'}
+[4.274424] (navigation) StdoutLine: {'line': b'running install_egg_info\n'}
+[4.276189] (navigation) StdoutLine: {'line': b"removing '/home/parallels/VisualSim/src/install/navigation/lib/python3.10/site-packages/navigation-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[4.276866] (navigation) StdoutLine: {'line': b'Copying ../build/navigation/navigation.egg-info to /home/parallels/VisualSim/src/install/navigation/lib/python3.10/site-packages/navigation-0.0.0-py3.10.egg-info\n'}
+[4.277642] (navigation) StdoutLine: {'line': b'running install_scripts\n'}
+[4.291052] (navigation) StdoutLine: {'line': b'Installing client script to /home/parallels/VisualSim/src/install/navigation/lib/navigation\n'}
+[4.291401] (navigation) StdoutLine: {'line': b'Installing service script to /home/parallels/VisualSim/src/install/navigation/lib/navigation\n'}
+[4.291531] (navigation) StdoutLine: {'line': b"writing list of installed files to '/home/parallels/VisualSim/src/build/navigation/install.log'\n"}
+[4.308740] (navigation) CommandEnded: {'returncode': 0}
+[4.313131] (navigation) JobEnded: {'identifier': 'navigation', 'rc': 0}
+[4.313692] (-) EventReactorShutdown: {}

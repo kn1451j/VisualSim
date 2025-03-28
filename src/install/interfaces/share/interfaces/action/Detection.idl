@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from interfaces/action/Detection.action
+// generated code does not contain a copyright notice
+
+#include "sensor_msgs/msg/Image.idl"
+
+module interfaces {
+  module action {
+    @verbatim (language="comment", text=
+      "geometry_msgs/Pose pose")
+    struct Detection_Goal {
+      sensor_msgs::msg::Image img;
+    };
+    struct Detection_Result {
+      boolean recieved;
+    };
+    struct Detection_Feedback {
+      uint8 structure_needs_at_least_one_member;
+    };
+  };
+};
