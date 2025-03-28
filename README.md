@@ -5,6 +5,7 @@ It uses the Gaussian Splat directory to render a pretrained splat based on user 
 To use Gaussian Splatting (requires GPU), use web_server.py server. Otherwise, run web_simple.py (which will just display a static image).
 
 /web -> contains all the code for the flask server
+
 /src -> contains the "navigation" and custom "interface" (action) ROS2 packages
 
 # Setup:
