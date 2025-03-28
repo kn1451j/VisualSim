@@ -1,3 +1,8 @@
+"""
+Used by the navigator class to track position and orientation
+TODO -> integrate this
+"""
+
 import numpy as np
 import math
 

@@ -1,5 +1,6 @@
 """
-A basic ROS2 node that simulates naive navigation, POSTs the position estimates to the 
+A basic ROS2 node that requests positions from a Flask server, communicates with the
+"Trajectory" node to add points to a trajectory buffer.
 """
 
 import rclpy
@@ -7,8 +8,6 @@ from rclpy.node import Node
 from geometry_msgs.msg import Point
 from rclpy.action import ActionClient
 from interfaces.action import Location
-import yaml
-import os
 import requests
 
 class NavigatorNode(Node):

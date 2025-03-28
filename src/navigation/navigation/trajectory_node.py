@@ -4,6 +4,10 @@ from rclpy.action import ActionServer
 from interfaces.action import Location
 from queue import Queue
 
+"""
+A tiny trajectory simulation node that serves a Trajectory client (the Navigation node)
+and adds requested locations to a queue buffer
+"""
 class TrajectoryNode(Node):
 
     def __init__(self):
