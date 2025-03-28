@@ -4,9 +4,15 @@ It uses the Gaussian Splat directory to render a pretrained splat based on user 
 
 To use Gaussian Splatting (requires GPU), use web_server.py server. Otherwise, run web_simple.py (which will just display a static image).
 
+/web -> contains all the code for the flask server
+/src -> contains the "navigation" and custom "interface" (action) ROS2 packages
+
 # Setup:
+### rclpy
+Download and setup ROS2
+
 ### Gaussian Splatting (used for rendering the image scene)
 
 Download a pretrained model from - https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/datasets/pretrained/models.zip
 
-You will need to configure the paths in render_img.py based on this
+You will need to configure the paths in render_img.py based on the path of the model.
