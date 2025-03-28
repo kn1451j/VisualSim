@@ -4,20 +4,20 @@ A basic ROS2 node that simulates naive navigation, POSTs the position estimates 
 
 import rclpy
 from rclpy.node import Node
-import requests
 from std_msgs.msg import String
 import yaml
 import os
+import requests
 
 class NavigatorNode(Node):
     def __init__(self):
-        super().__init__('flask_post_client')
+        super().__init__('navigator_client')
 
         # Declare parameters for configuration (endpoint URL)
-        self.declare_parameter('flask_endpoint_url', 'http://127.0.0.1:5000/post_endpoint')  # Default URL
+        self.declare_parameter('endpoint_url', 'http://127.0.0.1:5000/post_endpoint')  # Default URL
 
         # Load the Flask endpoint URL from the parameter server
-        self.flask_endpoint_url = self.get_parameter('flask_endpoint_url').get_parameter_value().string_value
+        self.flask_endpoint_url = self.get_parameter('endpoint_url').get_parameter_value().string_value
         self.get_logger().info(f"Flask endpoint URL: {self.flask_endpoint_url}")
 
         # Create a subscriber to listen to a string topic
@@ -28,8 +28,8 @@ class NavigatorNode(Node):
             10
         )
         
-        # To send a test message every 1 second (optional)
-        self.timer = self.create_timer(1.0, self.timer_callback)
+        # Timer to request data from the flask server every second
+        self.request_timer = self.create_timer(1.0, self.timer_callback)
 
         self.get_logger().info("Flask POST Client Node Initialized")
 

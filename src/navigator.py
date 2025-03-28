@@ -2,6 +2,7 @@
 Naive navigator class simulating the state of a "robot" spinning in a circle
 """
 import numpy as np
+from scipy.spatial.transform import Rotation
 
 class Navigator:
     def __init__(self, position, orientation):

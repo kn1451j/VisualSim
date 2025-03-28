@@ -1,2 +1,3 @@
-flask:
-  endpoint_url: "http://127.0.0.1:5000/post_endpoint" 
+navigator_client:
+  ros__parameters:
+    endpoint_url: "http://127.0.0.1:5000/post_endpoint" 

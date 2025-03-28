@@ -1,35 +1,39 @@
-from flask import Flask, request, render_template, jsonify, Response
-from render_img import render_save_gaussian
+from flask import Flask, request, render_template, jsonify, Response, send_from_directory
+from .render_img import Render
 import numpy as np
+from src.constructs import Position, Orientation
+import os
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='')
 
 # Path of file to which we render to (for HTML display)
-image_path = "image.jpeg" 
+image_path = os.path.abspath("web/static/images/image.jpeg" )
 # The actual rendered file
 image = np.array([])
 
 # Store the coordinates (for retrieval) and image name
-position = np.zeros(3)
-orientation = np.eye(3,3)
-coordinate_bounds = [-1, 1]
+position = Position()
+orientation = Orientation()
+
+render = Render("/home/ubuntu/GaussianViewTest/model", image_path)
 
 # Main page route with the form and image
-@app.route('/', methods=[])
+@app.route('/', methods=['GET', 'POST'])
 def home():
-    return render_template('index.html', x=x, y=y, z=z, image_name=image_path)
+    global position, orientation, render, image
+    if request.method == 'POST':
+        position.x = float(request.form.get('x', 0))
+        position.y = float(request.form.get('y', 0))
+        position.z = float(request.form.get('z', 0))
+        orientation.yaw = float(request.form.get('yaw', 0))
+        orientation.pitch = float(request.form.get('pitch', 0))
+        orientation.roll = float(request.form.get('roll', 0))
 
-# POST route to accept JSON data
-@app.route('/send-coords', methods=['POST'])
-def post_data():
-    if request.is_json:
-        data = request.get_json()
-        stored_coordinates['x'] = data.get('position.x')
-        stored_coordinates['y'] = data.get('position.y')
-        stored_coordinates['z'] = data.get('position.z')
-        return jsonify({"message": "Data received successfully!"}), 200
-    else:
-        return jsonify({"error": "Request must be JSON"}), 400
+        render.update_camera_pose(orientation.to_mat(), position.to_array())
+        image = render.render_gaussians()
+
+    return render_template('index.html', x=position.x, y=position.y, z=position.z, yaw=orientation.yaw,\
+                           pitch=orientation.pitch, roll=orientation.roll)
 
 # GET route to retrieve an image
 @app.route('/get-img', methods=['GET'])
@@ -40,22 +44,8 @@ def get_image():
 # GET route to retrieve the stored coordinates
 @app.route('/get-coords', methods=['GET'])
 def get_data():
-    if stored_coordinates:
-        return jsonify(stored_coordinates), 200
-    else:
-        return jsonify({"message": "No data found"}), 404
+    return jsonify(position.to_array(), orientation.to_array()), 200
 
 if __name__ == '__main__':
-    # Generate random coordinates within coordinate bounds
-    rand_pos = (np.random.rand(3) - 0.5) * 2
-    
-    # Store the coordinates for retrieval
-    stored_coordinates['x'] = rand_pos[0]
-    stored_coordinates['y'] = rand_pos[1]
-    stored_coordinates['z'] = rand_pos[2]
-    
-    # TODO Render to the image based on image coordinates
-    # Save the rendered image
-    cv2.imwrite(image_path, image)
-
-    app.run(debug=True)
+    # Render inital gaussian to the image based on image coordinates
+    app.run(debug=True, port=2222)
